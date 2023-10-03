@@ -1,0 +1,12 @@
+h2{
+    color: aqua;
+    align-self: center;
+}
+.judul{font-family: 'Franklin Gothic Medium';
+text-align: center;
+color: blue;
+font-size: large;}
+#konten{
+    color: brown;
+    font-size: 20px;
+}

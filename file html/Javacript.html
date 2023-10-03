@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antun</title>
+</head>
+<body>
+    <script>
+        var nama = window.prompt("siapa nama anda?")
+        document.write("<h2>halo "+nama+"! Selamat Datang.</h2> ");
+    </script>
+
+    <form name="formdaftar">
+        <label for="nama">nama</label>
+        <input type="text" id="nama" name="nama"><br>
+        <label for="password">sandi</label>
+        <input type="password" id="password" name="sandi"><br>
+        <button type="submit" onclick="proses()">simpan</button>
+        <button type="reset" onclick="return confirm('apakah anda yakin akan mereset laman ini?')">reset</button>
+    </form>
+
+    <script>
+        function proses(){
+            let nama = document.formdaftar.nama.value
+            let sandi = document.formdaftar.sandi.value
+
+            document.write("data yang anda input<br>")
+            document.write("Nama: "+nama+"<br>")
+            document.write("sandi: "+sandi+"<br>")
+        }
+    </script>
+</body>
+</html>

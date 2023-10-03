@@ -1,0 +1,49 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: brown;
+}
+.container1{
+        background-color: blue;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+.container2{
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.container3{
+    background-color: blue;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: aliceblue;
+    width: 80px;
+    height: 80px;
+    border: 2px solid blue;
+    border-radius: 10px;
+
+
+}
