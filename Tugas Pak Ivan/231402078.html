@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quis Anton</title>
+</head>
+<body>
+    <form name="diskon">
+        <input id="bayar" name="bayar" type="bayar" placeholder="Nominal isi pulsa"><br>
+        <input type="radio" name="Layanan" id="Telkomsel" value="Telkomsel">Telkomsel <br>
+        <input type="radio" name="Layanan" id="indosat" value="indosat">indosat <br>
+        <input type="radio" name="Layanan" id="xl" value="xl">xl<br>
+        <button type="button" onclick="biaya()">Total Biaya</button>
+
+    
+</body>
+<script>
+    function biaya(){
+        var bayar;
+        var harga;
+        var diskon;
+
+        bayar=parseInt( document.diskon.bayar.value);
+        provider = document.diskon.Layanan.value;
+        
+        switch(provider){
+            case"Telkomsel":
+            potongan=bayar*0.1;
+            harga=a=bayar-potongan;
+            alert("diskon 10%, Biaya" + harga);
+            break;
+
+            case"indosat":
+            potongan=bayar*0.05;
+            harga=bayar-potongan;
+            alert("diskon 5%, Biaya" + harga);
+            break;
+
+            case"xl":
+            potongan=bayar*0.02;
+            harga=bayar-potongan;
+            alert("diskon 2%, biaya" + harga);
+            break;
+        }
+
+    }
+</script>
+</html>
