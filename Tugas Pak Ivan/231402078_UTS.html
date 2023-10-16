@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</script>
+<body>
+    <form name="diskon">
+        Input Nilai <input type="number" name="nilaimurid" id="nilaimurid" min="0" max="100">
+        <button type="button" onclick="cekNilai()">Cek Nilai</button>
+    </form>
+</body>
+<script>
+    function cekNilai()
+{
+    let nilai = parseInt(document.getElementById("nilaimurid").value);
+
+    if (nilai >= 80) {
+        alert("Selamat, Anda Mendapatkan Nilai A") ;
+        return false;
+    } 
+    else if(nilai >= 75){
+        alert("Anda Mendapatkan Nilai B+");
+        return false;
+    }
+    else if(nilai >= 70) {
+        alert("Anda Mendapatkan Nilai B");
+        return false;
+    }
+    else if(nilai >= 65) {
+        alert("Anda Mendapatkan Nilai C+");
+        return false;
+    }
+    else if(nilai >= 60) {
+        alert("Anda Mendapatkan Nilai C");
+        return false;
+    }
+    else if(nilai >= 55) {
+        alert("Anda Mendapatkan Nilai D");
+        return false;
+    }
+    else if (nilai <= 55) {
+        alert("Anda Mendapatkan Nilai E");
+        return false;
+    }
+    else {
+        alert("Nilai tidak tersedia");
+        return false;
+    }
+}
+</script>
+</html>

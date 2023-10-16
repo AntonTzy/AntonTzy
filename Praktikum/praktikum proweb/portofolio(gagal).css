@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+body{
+    font-family: 'Mooli', sans-serif;
+    background:url(../pexels-rovenimagescom-949587.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.Header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 50%;
+    margin-left: 30px;
+}
+
+.Nama{
+display: flex;
+align-self: flex-start;
+margin-right: 200px;
+}
+
+.HomePg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Gambar1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+}
+.container {
+
+    padding-left: 10px;
+    width: 1200px;
+    height: 300px;
+    display: flex;
+}
